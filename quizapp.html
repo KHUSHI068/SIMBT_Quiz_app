@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equip="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>QUIZ APP</title>
+    <link rel="stylesheet" href="quiz.css" >
+</head>
+
+<body>
+<img src="quiz.jpg" alt="img" id="img" class="img">
+<h1 id="title">Today's Quiz</h1>
+<div id="quizContainer">
+   <div class="questions">
+    <h2 id="question"></h2>
+    <ol type="A">
+        <li class="option">
+            <span id="option0" onclick="calcscore(this)"></span>
+        </li>
+        <li class="option">
+            <span id="option1" onclick="calcscore(this)"></span>
+        </li>
+        <li class="option">
+            <span id="option2" onclick="calcscore(this)"></span>
+        </li>
+        <li class="option">
+            <span id="option3" onclick="calcscore(this)"></span>
+        </li>
+    </ol>
+    <h4 id="stat"></h4>
+   </div>
+<div class="buttons">
+    <button type="button" class="next">Next</button>
+</div>
+</div>
+
+<div id="scoreboard">
+    <img src="" alt="">
+    <h2 id="score-title">Your Score</h2>
+    <h2 id="score"></h2>
+    <button type="button" id="scoreButton">Back To Quiz</button>
+    <button type="button" id="checkAnswer" onclick="checkAnswer()">Check Answer</button>
+</div>
+<div id="answerBank">
+    <h2>Answers :</h2>
+    <ol type="1" id="answers"></ol>
+    <button type="button" id="scoreButton" onclick="backToQuiz">Back To Quiz</button>
+</div>
+<script src=Quiz.js></script>
+</body>
+</html>
